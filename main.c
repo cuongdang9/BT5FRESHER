@@ -1,9 +1,9 @@
 #include<stdio.h>
-int n;
+float n;
 void km(){
     do{
         
-        printf("\n Nhap so km la = ");
+        printf("\nQuang duong ban da di la:  ");
         scanf("%d",&n);
     } while(n <=0);
     }
@@ -14,17 +14,17 @@ int main(int argc, char const *argv[])
     km();
     if(n<=1)
     {
-        printf("\nso tien can tra: %d",t1);
+        printf("\nso tien can tra: %d VND",t1);
     }
     else if (n > 1 && n <=31)
     {
     tong=t1+t2*(n-1);
-    printf("\nso tien can tra: %d",tong);
+    printf("\nso tien can tra: %d VND",tong);
     }
     else if (n>31)
     {
     tong= t1 + t2*30 + t3*(n-31);
-    printf("\nso tien can tra la: %d",tong);
+    printf("\nso tien can tra la: %d VND",tong);
     }
     return 0;
 }
